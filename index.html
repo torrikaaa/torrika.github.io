@@ -3,28 +3,182 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>V-приложения и стратегия развития ИИ</title>
+  <title>V-приложения и搭建стратегия развития ИИ</title>
   <meta name="description" content="Пять приложений с искусственным интеллектом и практическая стратегия развития ИИ на примере Эстонии." />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230c1017'/%3E%3Cpath d='M20 20h24v24H20z' fill='none' stroke='%2397f5c5' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23ffb86b'/%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="style.css" />
+  <!-- Исправленная иконка вкладки: тёмный квадратик с буквой V -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://w3.org' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c1017'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-size='36' font-weight='bold' fill='%2397f5c5' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header><div class="wrap nav"><a class="brand" href="#top"><span class="mark">V</span><span>Viktoria</span></a><nav class="links"><a href="#apps">Приложения</a><a href="#strategy">Стратегия</a><a href="#principles">Принципы</a></nav></div></header>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><span class="mark">V</span><span>Viktoria</span></a>
+      <nav class="links"><a href="#apps">Приложения</a><a href="#strategy">Стратегия</a><a href="#principles">Принципы</a></nav>
+    </div>
+  </header>
   <main id="top">
-    <div class="wrap hero"><div><div class="eyebrow">Короткий гид по ИИ</div><h1>ИИ уже встроен в то, <span>как мы работаем.</span></h1><p class="lead">Пять приложений, которые показывают разные виды искусственного интеллекта, и практическая карта того, как страна может развивать эту технологию ответственно.</p><a class="button" href="#apps">Изучить приложения</a></div><aside class="hero-note"><strong>5 приложений · 1 стратегия</strong>Сравниваем не только возможности, но и сам принцип работы: генерация, поиск, код, речь и адаптивное обучение.</aside></div>
-    <section id="apps"><div class="wrap"><div class="section-head"><div><div class="eyebrow">01 / Инструменты</div><h2>Пять разных «двигателей» ИИ</h2></div><p>Тип ИИ — это не рекламный ярлык. Он объясняет, какие данные система получает, что создаёт и где ей особенно полезно доверять.</p></div><div class="apps">
-      <article class="app"><div class="app-top"><span class="app-num">01</span><span class="app-icon i1">P</span></div><span class="tag">RAG · поиск</span><h3>Perplexity</h3><p class="desc">Ищет информацию в интернете и собирает ответ с опорой на источники.</p><div class="more"><span><b>Подходит:</b> исследователям и тем, кому нужно быстро разобраться в теме.</span><span><b>Сильная сторона:</b> ссылки и свежий контекст.</span><span><b>Ограничение:</b> источники нужно проверять.</span></div><p class="why"><b>Почему так:</b> сочетает языковую модель с поиском и извлечением фактов — это retrieval‑augmented generation.</p></article>
-      <article class="app"><div class="app-top"><span class="app-num">02</span><span class="app-icon i2">M</span></div><span class="tag">Генеративный · визуальный</span><h3>Midjourney</h3><p class="desc">Создаёт изображения по текстовому описанию и управляет стилем сцены.</p><div class="more"><span><b>Подходит:</b> дизайнерам, авторам и креативным командам.</span><span><b>Сильная сторона:</b> атмосфера, композиция и визуальные идеи.</span><span><b>Ограничение:</b> точный текст и детали могут искажаться.</span></div><p class="why"><b>Почему так:</b> генеративная модель синтезирует новый результат, а не ищет готовую картинку.</p></article>
-      <article class="app"><div class="app-top"><span class="app-num">03</span><span class="app-icon i3">&lt;/&gt;</span></div><span class="tag">LLM · код</span><h3>GitHub Copilot</h3><p class="desc">Предлагает фрагменты кода, тесты и объяснения прямо в редакторе.</p><div class="more"><span><b>Подходит:</b> разработчикам для черновиков и рутинных задач.</span><span><b>Сильная сторона:</b> ускоряет работу с типовым кодом.</span><span><b>Ограничение:</b> предложения надо тестировать на безопасность.</span></div><p class="why"><b>Почему так:</b> языковая модель продолжает код по контексту проекта и человеческому запросу.</p></article>
-      <article class="app"><div class="app-top"><span class="app-num">04</span><span class="app-icon i4">A</span></div><span class="tag">NLP · голос</span><h3>ElevenLabs</h3><p class="desc">Преобразует текст в выразительную речь и работает с голосовыми стилями.</p><div class="more"><span><b>Подходит:</b> для озвучки видео, курсов и прототипов.</span><span><b>Сильная сторона:</b> естественный тембр и интонация.</span><span><b>Ограничение:</b> нужны согласия на использование голосов.</span></div><p class="why"><b>Почему так:</b> нейросеть моделирует фонетику, тембр и интонацию — это синтез речи.</p></article>
-      <article class="app"><div class="app-top"><span class="app-num">05</span><span class="app-icon i5">D</span></div><span class="tag">Адаптивный · обучение</span><h3>Duolingo Max</h3><p class="desc">Подстраивает упражнения и даёт разговорную практику с ИИ‑персонажем.</p><div class="more"><span><b>Подходит:</b> тем, кто учит язык короткими регулярными сессиями.</span><span><b>Сильная сторона:</b> персональный темп и обратная связь.</span><span><b>Ограничение:</b> не заменяет живое общение.</span></div><p class="why"><b>Почему так:</b> алгоритм использует данные об ошибках ученика, меняя сложность и маршрут обучения.</p></article>
-    </div></div></section>
-    <section id="strategy" class="strategy"><div class="wrap"><div class="section-head"><div><div class="eyebrow">02 / Стратегия страны</div><h2>Как развивать ИИ<br/>на примере Эстонии</h2></div><p>Небольшая страна может выиграть не масштабом вычислений, а качеством данных, образования и государственных сервисов.</p></div><div class="strategy-grid"><div class="country"><span class="pill">Пример национального курса</span><h3 class="country-name">Эстония</h3><p>Цель: сделать ИИ инфраструктурой доверенных услуг — от школ и медицины до промышленности — при прозрачных правилах и контроле человека.</p></div><div class="steps"><div class="step"><div class="step-no">1</div><div><h3>Финансирование и вычисления</h3><p>Гранты университетам и стартапам, доступ к национальным и европейским вычислительным ресурсам, открытые датасеты с понятными правилами доступа.</p></div></div><div class="step"><div class="step-no">2</div><div><h3>Люди и образование</h3><p>ИИ‑грамотность в школе, переподготовка госслужащих и инженеров, исследовательские центры при университетах и оплачиваемые пилоты для малого бизнеса.</p></div></div><div class="step"><div class="step-no">3</div><div><h3>Приоритетные отрасли</h3><p>Здравоохранение — помощь врачу; промышленность — прогнозирование поломок; наука — анализ данных; образование — персональная практика; оборона — только в рамках международного права.</p></div></div><div class="step"><div class="step-no">4</div><div><h3>Контроль и доверие</h3><p>Независимый аудит рисков, маркировка синтетического контента, защита персональных данных, журналирование решений и обязательное участие человека в критичных процессах.</p></div></div></div></div><div class="detail-grid"><div class="detail"><strong>Кто финансирует</strong><h3>Государство + ЕС + бизнес</h3><p>Публичные деньги создают инфраструктуру, частные — превращают исследования в продукты.</p></div><div class="detail"><strong>Что измерять</strong><h3>Польза, а не шум</h3><p>Экономия времени, качество услуг, новые рабочие места и доля решений с проверяемыми источниками.</p></div><div class="detail"><strong>Кто контролирует</strong><h3>Регулятор и общество</h3><p>Независимые эксперты, профильные ведомства, суд и право человека оспорить автоматизированное решение.</p></div></div></div></section>
-    <section id="principles"><div class="wrap"><div class="section-head"><div><div class="eyebrow">03 / Быстрый вывод</div><h2>Три правила здоровой экосистемы</h2></div><p>Развитие ИИ — это не гонка за самой большой моделью, а настройка всей системы вокруг неё.</p></div><div class="principles"><div class="principle"><h3>Строить на своих данных</h3><p>Язык, культура и отраслевые процессы требуют локальных наборов данных и экспертизы.</p></div><div class="principle"><h3>Проверять до масштабирования</h3><p>Каждый пилот должен проходить оценку точности, смещений, безопасности и стоимости.</p></div><div class="principle"><h3>Оставлять путь к человеку</h3><p>Технология помогает принимать решения, но не должна скрывать ответственность за них.</p></div></div></div></section>
-  </main>
-  <footer class="footer"><div class="wrap nav"><div class="source"><b>V</b><br/>Объясняем искусственный интеллект простыми словами. Материал носит образовательный характер.</div><div>Обновлено · октябрь 2026</div></div></footer>
-  <script src="script.js"></script>
-</body>
-</html>
-
-
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">Короткий гид по ИИ</div>
+        <h1>ИИ уже встроен в то, <span>как мы работаем.</span></h1>
+        <p class="lead">Пять приложений, которые показывают разные виды искусственного интеллекта, и практическая карта того, как страна может развивать эту технологию ответственно.</p>
+        <a class="button" href="#apps">Изучить приложения</a>
+      </div>
+      <aside class="hero-note">
+        <strong>5 приложений · 1 стратегия</strong>Сравниваем не только возможности, но и сам принцип работы: генерация, поиск, код, речь и адаптивное обучение.
+      </aside>
+    </div>
+    
+    <section id="apps">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">01 / Инструменты</div><h2>Пять разных «двигателей» ИИ</h2></div>
+          <p>Тип ИИ — это не рекламный ярлык. Он объясняет, какие данные система получает, что создаёт и где ей особенно полезно доверять.</p>
+        </div>
+        <div class="apps">
+          <article class="app">
+            <div class="app-top"><span class="app-num">01</span><span class="app-icon i1">P</span></div>
+            <span class="tag">RAG · поиск</span>
+            <h3>Perplexity</h3>
+            <p class="desc">Ищет информацию в интернете и собирает ответ с опорой на источники.</p>
+            <div class="more">
+              <span><b>Подходит:</b> исследователям и тем, кому нужно быстро разобраться в теме.</span>
+              <span><b>Сильная сторона:</b> ссылки и свежий контекст.</span>
+              <span><b>Ограничение:</b> источники нужно проверять.</span>
+            </div>
+            <p class="why"><b>Почему так:</b> сочетает языковую модель с поиском и извлечением фактов — это retrieval‑augmented generation.</p>
+          </article>
+          
+          <article class="app">
+            <div class="app-top"><span class="app-num">02</span><span class="app-icon i2">M</span></div>
+            <span class="tag">Генеративный · визуальный</span>
+            <h3>Midjourney</h3>
+            <p class="desc">Создаёт изображения по текстовому описанию и управляет стилем сцены.</p>
+            <div class="more">
+              <span><b>Подходит:</b> дизайнерам, авторам и креативным командам.</span>
+              <span><b>Сильная сторона:</b> атмосфера, композиция и визуальные идеи.</span>
+              <span><b>Ограничение:</b> точный текст и детали могут искажаться.</span>
+            </div>
+            <p class="why"><b>Почему так:</b> генеративная модель синтезирует новый результат, а не ищет готовую картинку.</p>
+          </article>
+          
+          <article class="app">
+            <div class="app-top"><span class="app-num">03</span><span class="app-icon i3">&lt;/&gt;</span></div>
+            <span class="tag">LLM · код</span>
+            <h3>GitHub Copilot</h3>
+            <p class="desc">Предлагает фрагменты кода, тесты и объяснения прямо в редакторе.</p>
+            <div class="more">
+              <span><b>Подходит:</b> разработчикам для черновиков и рутинных задач.</span>
+              <span><b>Сильная сторона:</b> ускоряет работу с типовым кодом.</span>
+              <span><b>Ограничение:</b> предложения надо тестировать на безопасность.</span>
+            </div>
+            <p class="why"><b>Почему так:</b> языковая модель продолжает код по контексту проекта и человеческому запросу.</p>
+          </article>
+          
+          <article class="app">
+            <div class="app-top"><span class="app-num">04</span><span class="app-icon i4">A</span></div>
+            <span class="tag">NLP · голос</span>
+            <h3>ElevenLabs</h3>
+            <p class="desc">Преобразует текст в выразительную речь и работает с голосовыми стилями.</p>
+            <div class="more">
+              <span><b>Подходит:</b> для озвучки видео, курсов и прототипов.</span>
+              <span><b>Сильная сторона:</b> естественный тембр и интонация.</span>
+              <span><b>Ограничение:</b> нужны согласия на использование голосов.</span>
+            </div>
+            <p class="why"><b>Почему так:</b> нейросеть моделирует фонетику, тембр и интонацию — это синтез речи.</p>
+          </article>
+          
+          <article class="app">
+            <div class="app-top"><span class="app-num">05</span><span class="app-icon i5">D</span></div>
+            <span class="tag">Адаптивный · обучение</span>
+            <h3>Duolingo Max</h3>
+            <p class="desc">Подстраивает упражнения и даёт разговорную практику с ИИ‑персонажем.</p>
+            <div class="more">
+              <span><b>Подходит:</b> тем, кто учит язык короткими регулярными сессиями.</span>
+              <span><b>Сильная сторона:</b> персональный темп и обратная связь.</span>
+              <span><b>Ограничение:</b> не заменяет живое общение.</span>
+            </div>
+            <p class="why"><b>Почему так:</b> алгоритм использует данные об ошибках ученика, меняя сложность и маршрут обучения.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <section id="strategy" class="strategy">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">02 / Стратегия страны</div><h2>Как развивать ИИ<br/>на примере Эстонии</h2></div>
+          <p>Небольшая страна может выиграть не масштабом вычислений, а качеством данных, образования и государственных сервисов.</p>
+        </div>
+        <div class="strategy-grid">
+          <div class="country">
+            <span class="pill">Пример национального курса</span>
+            <h3 class="country-name">Эстония</h3>
+            <p>Цель: сделать ИИ инфраструктурой доверенных услуг — от школ и медицины до промышленности — при прозрачных правилах и контроле человека.</p>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <div class="step-no">1</div>
+              <div>
+                <h3>Финансирование и вычисления</h3>
+                <p>Гранты университетам и стартапам, доступ к национальным и европейским вычислительным ресурсам, открытые датасеты с понятными правилами доступа.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-no">2</div>
+              <div>
+                <h3>Люди и образование</h3>
+                <p>ИИ‑грамотность в школе, переподготовка госслужащих и инженеров, исследовательские центры при университетах и оплачиваемые пилоты для малого бизнеса.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-no">3</div>
+              <div>
+                <h3>Приоритетные отрасли</h3>
+                <p>Здравоохранение — помощь врачу; промышленность — прогнозирование поломок; наука — анализ данных; образование — персональная практика; оборона — только в рамках международного права.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-no">4</div>
+              <div>
+                <h3>Контроль и доверие</h3>
+                <p>Независимый аудит рисков, маркировка синтетического контента, защита персональных данных, журналирование решений и обязательное участие человека в критичных процессах.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail-grid">
+          <div class="detail">
+            <strong>Кто финансирует</strong>
+            <h3>Государство + ЕС + бизнес</h3>
+            <p>Публичные деньги создают инфраструктуру, частные — превращают исследования в продукты.</p>
+          </div>
+          <div class="detail">
+            <strong>Что измерять</strong>
+            <h3>Польза, а не шум</h3>
+            <p>Экономия времени, качество услуг, новые рабочие места и доля решений с проверяемыми источниками.</p>
+          </div>
+          <div class="detail">
+            <strong>Кто контролирует</strong>
+            <h3>Регулятор и общество</h3>
+            <p>Независимые эксперты, профильные ведомства, суд и право человека оспорить автоматизированное решение.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="principles">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">03 / Быстрый вывод</div><h2>Три правила здоровой экосистемы</h2></div>
+          <p>Развитие ИИ — это не гонка за самой большой моделью, а настройка всей системы вокруг неё.</p>
+        </div>
+        <div class="principles">
+          <div class="principle">
+            <h3>Строить на своих данных</h3>
+            <p>Язык, культура и отраслевые процессы требуют локальных наборов данных и экспертизы.</p>
+          </div>
+          <div class="principle">
+            <h3>Проверять до масштабирования</h3>
+            <p>Каждый пилот должен проходить оценку точности, смещений, безопасности и стоимости.</p>
+          </div>
